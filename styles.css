@@ -1,4 +1,97 @@
-.golden-img {
+img {
     max-width: 50%;
     height: auto;
+}
+
+body {
+    background-color: #0f020b;
+    color: #d6c7c7;
+}
+h1, h2, h3 {
+    text-align: center;
+    color: #ebeef1;
+} 
+
+.faq p {
+    text-align: center;
+}
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: rgb(227, 231, 227);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+p {
+    text-align: left;
+}
+
+.centered {
+  text-align: center;
+}
+
+main {
+    max-width: 1024px;
+    min-width: 800px;
+    padding: 20px;
+    margin: auto;
+}
+
+/* Donate form styles */
+.donate-section {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 18px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+.donate-section h2 {
+  text-align: center;
+  margin-top: 0;
+}
+.donate-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: start;
+}
+.donate-form label { grid-column: 1 / -1; margin-top:6px; }
+.donate-form input, .donate-form textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #000;
+}
+.donate-form input[type="number"] { max-width: 200px; }
+.donate-form textarea { grid-column: 1 / -1; }
+.donate-btn {
+  grid-column: 1 / -1;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.donate-btn:hover { background: #ff4b4b; }
+.donate-thanks { text-align:center; font-weight:600; padding: 12px; }
+
+@media (max-width: 700px){
+  .donate-form { grid-template-columns: 1fr; }
+  main { min-width: auto; }
 }
